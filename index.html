@@ -4,21 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>Giphy Homework</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-  <div id="buttons"></div>
-   
-
+    <h1 id ="title">Anime Gifs</h1>
+    <p id = "mainText">Press a Button and Behold all the Gifs!</p>
+    <div id="buttons"></div>
+    
+    
+    </br>
     <form id="button-form">
       <label for="button-input">Add a Giphy Filter</label>
       <input type="text" id="button-input">
-      <br>
-      <input id="add-button" type="submit" value="Add a Giphy Filter">
+    </br>
+    </br>
+      <input id="add-button" class="btn btn-outline-secondary" type="submit" value="Add a Giphy Filter">
+    
     </form>
-
-
-  <div id="gifsDiv">
+ <div id="gifsDiv">
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

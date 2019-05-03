@@ -1,0 +1,49 @@
+body{
+    background-color: coral;
+}
+
+.jaif
+{
+    float:left;
+}
+
+#add-button{
+    text-align: center;
+    
+}
+
+.Giphy-button{
+    margin: 0, auto;
+    font-size: 15px;
+    padding: 10px,10px;
+    
+}
+#buttons{
+    text-align: center;
+    margin: 0, auto;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+#button-form{
+    padding:10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#title{
+    text-align: center;
+    margin:0, auto;
+    background-color: antiquewhite;
+}
+
+#mainText{
+    text-align: center;
+    font-size: 25px;
+    margin:0, auto;
+    background-color: antiquewhite;
+}
+
+#add-button{
+    background-color: antiquewhite;
+}

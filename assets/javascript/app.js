@@ -1,4 +1,4 @@
-var topics = ["Dogs", "Cats", "Goats", "Cows"];
+var topics = ["Trigun", "Cowboy Beebop", "Durarara", "Dragon Ball Z"];
 
     function renderButtons() {
 
@@ -8,7 +8,7 @@ var topics = ["Dogs", "Cats", "Goats", "Cows"];
       console.log(topics[i])
       btn = $('<button>');
       btn.html(topics[i]);
-      btn.addClass("Giphy-button");
+      btn.addClass("btn btn-outline-secondary Giphy-button");
       btn.attr("data-name",topics[i]);
       $("#buttons").append(btn);
     }
@@ -27,15 +27,17 @@ var topics = ["Dogs", "Cats", "Goats", "Cows"];
         .then(function(response) {
 
           var results = response.data;
-            for (var i = 0; i < results.length; i++) {
+          $("#gifsDiv").empty();  
+            for (var i = 0; i < results.length; i++) { 
               var rating = results[i].rating;
-              var tipicDiv = $("<div>");
+              var topicDiv = $("<div>");
+              topicDiv.addClass("jaif");
               var p = $("<p>").text("Rating: " + rating);
-              var tipicImage = $("<img>");
-              tipicImage.attr("src", results[i].images.fixed_height.url);
-              tipicDiv.prepend(p);
-              tipicDiv.append(tipicImage);
-              $("#gifsDiv").prepend(tipicDiv);
+              var topicImage = $("<img>");
+              topicImage.attr("src", results[i].images.fixed_height.url);
+              topicDiv.prepend(p);
+              topicDiv.append(topicImage);
+              $("#gifsDiv").append(topicDiv);
             }
         });
     };
@@ -46,9 +48,8 @@ var topics = ["Dogs", "Cats", "Goats", "Cows"];
     $("#add-button").on("click", function(event) {
         event.preventDefault();
         var input = $("#button-input").val();
-        giphys.push(input);
+        topics.push(input);
         renderButtons();
-        console.log(giphys)
       });
 
 
