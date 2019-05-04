@@ -4,11 +4,14 @@ body{
 
 .jaif
 {
+    margin-top: 15px;
     float:left;
+    
 }
 
 #add-button{
     text-align: center;
+    background-color: antiquewhite;
     
 }
 
@@ -44,6 +47,8 @@ body{
     background-color: antiquewhite;
 }
 
-#add-button{
+.rating{
     background-color: antiquewhite;
+    text-align: center;
 }
+

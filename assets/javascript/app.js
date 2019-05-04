@@ -33,8 +33,10 @@ var topics = ["Trigun", "Cowboy Beebop", "Durarara", "Dragon Ball Z"];
               var topicDiv = $("<div>");
               topicDiv.addClass("jaif");
               var p = $("<p>").text("Rating: " + rating);
+              p.addClass("rounded-pill rating")
               var topicImage = $("<img>");
               topicImage.attr("src", results[i].images.fixed_height.url);
+              topicImage.addClass("rounded shadow-lg")
               topicDiv.prepend(p);
               topicDiv.append(topicImage);
               $("#gifsDiv").append(topicDiv);

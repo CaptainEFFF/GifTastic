@@ -10,23 +10,45 @@
 </head>
 
 <body>
-    <h1 id ="title">Anime Gifs</h1>
-    <p id = "mainText">Press a Button and Behold all the Gifs!</p>
-    <div id="buttons"></div>
-    
-    
-    </br>
-    <form id="button-form">
-      <label for="button-input">Add a Giphy Filter</label>
-      <input type="text" id="button-input">
-    </br>
-    </br>
-      <input id="add-button" class="btn btn-outline-secondary" type="submit" value="Add a Giphy Filter">
-    
-    </form>
- <div id="gifsDiv">
-  </div>
+    <container class= "container">
+         <row class= "row">
+            <div class = "col-md-4"></div>
+        <h1 id ="title" class="col-md-4 rounded-pill"> Anime Gifs </h1>
+            <div class = "col-md-4"></div>
+        </row>
+        <row class= "row">
+            <div class = "col-md-4"></div>
+        <p id = "mainText" class="col-md-4 rounded-pill">Press a Button and Behold all the Gifs!</p>
+            <div class = "col-md-4"></div>
+        </row>
+        <row class= "row">
+            <div class = "col-md-4"></div>
+        <div id="buttons" class = "col-md-4 rounded"></div>
+            <div class = "col-md-4"></div>
+        </row>  
 
+        </br>
+
+        <row class= "row">
+            <div class = "col-md-4"></div>
+        <form id="button-form" class="col-md-4 rounded-pill">
+        <label for="button-input">Add a Giphy Filter</label>
+        <input type="text" id="button-input">
+            <div class = "col-md-4"></div>
+    
+        <input id="add-button" class="btn btn-outline-secondary" type="submit" value="Add a Giphy Filter">
+    
+        </row>
+        </form>
+
+        <row class = "row">
+                <div class = "col-md-1"></div>
+        <div id="gifsDiv" class="col-md-10">
+                <div class = "col-md-1"></div>
+        </row>
+</div>
+
+</container>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
 
